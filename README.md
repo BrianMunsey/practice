@@ -68,3 +68,25 @@ public class Solution {
         System.out.println("Int: " + i);
     }
 }
+
+# Java Output Formatting
+
+public class Solution {
+
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++)
+            {
+                String s1=sc.next();
+                    while(s1.length()<15){
+                        s1+=" ";
+                    }
+                int x=sc.nextInt();
+                String newNum = String.format("%03d", x);
+                System.out.println(s1+newNum);
+            }
+            System.out.println("================================");
+
+    }
+}
