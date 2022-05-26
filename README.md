@@ -194,3 +194,20 @@ public class Solution {
                 
     }
 }
+
+# Java Int to String
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        try{
+            int puzzleConverter = sc.nextInt();
+            String puzzleConvert = Integer.toString(puzzleConverter);
+            System.out.println("Good job");
+        }
+        catch(Exception e){
+            System.out.println("Wrong answer");
+        }
+    }
+}
